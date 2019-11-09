@@ -12,7 +12,14 @@
         <div>
             <p>Published:</p>
             <h2><a href="/">My First Post</a></h2>    
-            <p>It works</p>
+
+            {% for post in posts %}
+                <div>
+                    <p>Published: {{ post.published_date }}</p>                          
+                    <p>Published: {{ post.title }}</p>
+                    <p>Published: {{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
 
         </div>
 
