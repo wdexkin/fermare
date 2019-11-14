@@ -1,15 +1,21 @@
+{% load static %}
+
 <html>
     <head>
-        <title>Fermare Blog Post</title>
+        <title>Fermare Blog Post</title>        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
 
     <body>
-        <div>
+        <div class="page-header">
             <h1 align="center"><a href="/">Fermare</a></h1>
             <h4 align="center">by Warrick Kin</h4>
         </div>
 
-        <div>
+        <div class="post">
             <p>Published:</p>
             <h2><a href="/">My First Post</a></h2>    
 
